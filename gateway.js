@@ -2,7 +2,7 @@
 const https = require('https');
 const crypto = require('crypto');
 const PORT = process.env.PORT || 3000;
-const WALLET_ADDRESS = '0x379B6643675421867f8436513826781748Ec8329'.toLowerCase();
+const WALLET_ADDRESS = '0x545Eefe13dCeA73D5293187886D756D7293F1dD4'.toLowerCase();
 const REQUIRED_USDC = 0.05;
 const REQUIRED_USDC_ATOMIC = '50000'; // 0.05 USDC (6 decimals)
 const BASE_USDC_CONTRACT = '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913'.toLowerCase();
@@ -150,7 +150,7 @@ const server = http.createServer(async (req, res) => {
         <h2>AgentFi Web Extraction Gateway (x402 V2 + Bazaar Enabled)</h2>
         <p>Status: <span style="color:green;font-weight:bold;">Active & Bazaar Discoverable</span></p>
         <p><strong>Pricing:</strong> 0.05 USDC per call on Base Mainnet (<code>eip155:8453</code>)</p>
-        <p><strong>Payment Address:</strong><br><code>0x379B6643675421867f8436513826781748Ec8329</code></p>
+        <p><strong>Payment Address:</strong><br><code>0x545Eefe13dCeA73D5293187886D756D7293F1dD4</code></p>
         <p><strong>Facilitator:</strong> <code>${FACILITATOR_URL}</code></p>
         <p><strong>Endpoint:</strong> POST <code>/v1/extract</code></p>
       </body>
